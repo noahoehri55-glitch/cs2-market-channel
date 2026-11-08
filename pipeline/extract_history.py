@@ -1,5 +1,5 @@
 """Turn the price repo's data-branch git history into a daily long-format CSV."""
-import json, subprocess, sys, csv, re
+import json, subprocess, sys, csv, re, os
 repo, out = sys.argv[1], sys.argv[2]
 def num(s):
     if s is None: return None
@@ -7,7 +7,9 @@ def num(s):
     if not s: return None
     # European: 1.234,56
     return float(s.replace('.','').replace(',','.'))
-commits=subprocess.check_output(['git','-C',repo,'log','data','--reverse','--format=%H %cs']).decode().split('\n')
+ep=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),'episode.json')
+cut=json.load(open(ep)).get('data_cutoff') if os.path.exists(ep) else None  # freeze the exact snapshot the script was written from
+commits=subprocess.check_output(['git','-C',repo,'log','data','--reverse','--format=%H %cs']+([f'--before={cut}'] if cut else [])).decode().split('\n')
 rows={}
 for line in commits:
     if not line.strip(): continue
