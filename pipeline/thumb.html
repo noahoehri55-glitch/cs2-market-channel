@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><style>
+@font-face{font-family:Osw;src:url(../assets/fonts/oswald-latin-700-normal.woff2);font-weight:700}
+*{margin:0;box-sizing:border-box}body{width:1280px;height:720px;overflow:hidden;position:relative;background:#000}
+.p{position:absolute;inset:0;background:url(../assets/plates/cold.webp) center/cover;filter:brightness(.62) saturate(.85)}
+.s{position:absolute;inset:0;background:linear-gradient(90deg,#0d0a07f5 0%,#0d0a07c0 52%,#0d0a0700 85%)}
+h1{position:absolute;left:58px;top:44px;font:700 104px/0.92 Osw;text-transform:uppercase;color:#f1e7d3}
+h1 span{color:#ff6a1a}
+.n{position:absolute;left:52px;bottom:24px;font:700 200px/1 Osw;color:#ff6a1a;text-shadow:0 6px 30px #0009}
+svg{position:absolute;right:30px;bottom:40px;width:560px;height:330px;overflow:visible}
+</style><div class="p"></div><div class="s"></div>
+<h1>26 cases.<br>8 months.<br><span>None went up.</span></h1><div class="n">−28%</div>
+<svg viewBox="0 0 560 330"><polyline id="l" fill="none" stroke="#f1e7d3" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" style="filter:drop-shadow(0 4px 10px #000c)"/></svg>
+<script>const s=SERIES,n=s.length,a=Math.min(...s),b=Math.max(...s);document.getElementById('l').setAttribute('points',s.map((v,i)=>`${i/(n-1)*560},${(b-v)/(b-a)*330}`).join(' '))</script>

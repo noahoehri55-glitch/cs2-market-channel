@@ -1,0 +1,139 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Osw;src:url(../assets/fonts/oswald-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:Osw;src:url(../assets/fonts/oswald-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:Fr;src:url(../assets/fonts/fraunces-latin-400-italic.woff2);font-weight:400;font-style:italic}
+@font-face{font-family:Fr;src:url(../assets/fonts/fraunces-latin-600-italic.woff2);font-weight:600;font-style:italic}
+@font-face{font-family:Mono;src:url(../assets/fonts/ibm-plex-mono-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Mono;src:url(../assets/fonts/ibm-plex-mono-latin-600-normal.woff2);font-weight:600}
+:root{--cream:#f1e7d3;--mute:#b9ad98;--sig:#ff6a1a;--ink:#1c1a17;--red:#c4301c}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000;color:var(--cream)}
+.scene{position:absolute;inset:0;display:none;overflow:hidden}.scene.on{display:block}
+.plate{position:absolute;inset:-3%;background-size:cover;background-position:center}
+.shade{position:absolute;inset:0}
+.osw{font-family:Osw;font-weight:700;text-transform:uppercase;line-height:.92}
+.mono{font-family:Mono;font-weight:500;letter-spacing:.07em;text-transform:uppercase}
+.fr{font-family:Fr;font-style:italic}
+.sig{color:var(--sig)}
+.blk{position:absolute;left:80px;right:80px}
+.k{font-size:30px;color:var(--sig)}
+#cap{position:absolute;left:60px;right:60px;top:1390px;text-align:center;z-index:40}
+#cap span{display:inline-block;font:700 82px/1.06 Osw;text-transform:uppercase;color:var(--cream);padding:6px 22px 10px;background:#110e0bd9}
+#cap span b{color:var(--sig);font-weight:700}
+#brand{position:absolute;left:80px;top:150px;font:600 26px Mono;letter-spacing:.12em;color:var(--cream);opacity:.8;z-index:41}
+#brand i{color:var(--sig);font-style:normal}
+#grain{position:absolute;inset:0;width:100%;height:100%;mix-blend-mode:overlay;opacity:.5;z-index:50;pointer-events:none}
+#vig{position:absolute;inset:0;z-index:49;background:radial-gradient(ellipse at 50% 45%,transparent 50%,#0009 100%)}
+
+/* hundred */
+#s_hundred .plate{background-image:url(../assets/plates/hundred.webp);filter:brightness(.5) saturate(.8);background-position:62% 50%}
+#s_hundred .shade{background:linear-gradient(180deg,#0b0907e8 0%,#0b090799 45%,#0b0907f0 100%)}
+#h_a{font-size:230px;position:relative;display:inline-block}
+#h_a svg{position:absolute;inset:-10px -20px;width:calc(100% + 40px);height:calc(100% + 20px);overflow:visible}
+#h_b{font-size:300px;margin-top:6px}
+/* chart */
+#s_chart .plate{background-image:url(../assets/plates/plaster.webp);filter:brightness(1.03) saturate(.85)}
+#s_chart .shade{background:radial-gradient(ellipse at 50% 40%,transparent 45%,#5a3d1f66 100%)}
+#csvg{position:absolute;left:40px;top:470px;width:1000px;height:700px;overflow:visible}
+.ax{font:500 26px Mono;fill:#4a4237}
+.hand{font:italic 600 46px Fr;fill:var(--red)}
+#cbig{position:absolute;left:80px;top:1205px;color:var(--ink);font-size:110px}
+/* guess */
+#s_guess .plate{background-image:url(../assets/plates/stat.webp);filter:brightness(.45) saturate(.8)}
+#s_guess .shade{background:linear-gradient(180deg,#0b0907e0,#0b090780 50%,#0b0907f0)}
+#g_now{font-size:340px;margin-top:10px}
+#g_bar{height:14px;background:var(--sig);width:0;margin-top:30px}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <filter id="rough" x="-5%" y="-30%" width="110%" height="160%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="7"/></filter>
+ <filter id="ruff" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".02" numOctaves="2" seed="8"/><feDisplacementMap in="SourceGraphic" scale="4"/></filter>
+</defs></svg>
+<div id="brand">CS2 MARKET <i>·</i> CASE FILE 01</div>
+
+<section class="scene" id="s_hundred"><div class="plate"></div><div class="shade"></div>
+ <div class="blk" style="top:330px">
+  <div class="mono k a0">€100 · 26 old CS2 cases · March</div>
+  <div class="osw a0" id="h_a" style="margin-top:30px">€100<svg viewBox="0 0 400 200" preserveAspectRatio="none"><path id="x100" d="M10 120 C 120 104, 260 112, 392 86" fill="none" stroke="#ff6a1a" stroke-width="10" stroke-linecap="round" filter="url(#rough)"/></svg></div>
+  <div class="osw sig" id="h_b"></div>
+  <div class="mono a3" style="font-size:30px;color:var(--mute);margin-top:20px">0 of 26 went up · before Steam's fee</div>
+ </div>
+</section>
+
+<section class="scene" id="s_chart"><div class="plate"></div><div class="shade"></div>
+ <div class="blk" style="top:270px"><div class="osw" style="font-size:96px;color:var(--ink)">Old case index</div><div class="fr" style="font-size:40px;color:#4a4237;margin-top:10px">26 discontinued CS2 cases · mid-March = 100</div></div>
+ <svg id="csvg" viewBox="0 0 1000 700"></svg>
+ <div class="osw" id="cbig"></div>
+</section>
+
+<section class="scene" id="s_guess"><div class="plate"></div><div class="shade"></div>
+ <div class="blk" style="top:300px">
+  <div class="mono k">Guess the price</div>
+  <div class="osw" style="font-size:150px;margin-top:20px">Snakebite<br>Case</div>
+  <div class="mono" style="font-size:34px;margin-top:40px;color:var(--mute)">March: <span style="color:var(--cream)" id="g_then"></span></div>
+  <div class="osw" id="g_now">?</div>
+  <div id="g_bar"></div>
+ </div>
+</section>
+
+<div id="cap"></div>
+<svg id="grain"><filter id="gn"><feTurbulence id="gt" type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="1" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#gn)"/></svg>
+<div id="vig"></div>
+<script>
+const D=window.__DATA__,F=D.facts,TL=D.timeline;
+const ease=x=>{x=Math.min(1,Math.max(0,x));return 1-Math.pow(1-x,3)},clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const eur=v=>'€'+v.toFixed(2);
+const snake=F.worst.find(w=>w[0]=='Snakebite Case');
+$('#g_then').textContent=eur(snake[1]);
+
+/* captions: split beats into chunks of <=4 words, timed by character share */
+const chunks=[];TL.scenes.forEach(sc=>sc.beats.forEach(b=>{const w=b.text.split(' ');const parts=[];for(let i=0;i<w.length;i+=4)parts.push(w.slice(i,i+4).join(' '));
+ const tot=parts.reduce((a,p)=>a+p.length+1,0);let c=sc.start+b.start;parts.forEach(p=>{const d=b.dur*(p.length+1)/tot;chunks.push([c,c+d,p]);c+=d})}));
+const HL=/(\d[\d,.]*%?|€[\d.,]+|zero|none|seventy|thirty-five|fifty-four|forty-five)/gi;
+
+/* chart */
+const W=1000,H=700,L=70,R=30,T=30,B=70,S=F.series,N=S.length,ymin=60,ymax=120;
+const X=i=>L+(W-L-R)*i/(N-1),Y=v=>T+(H-T-B)*(1-(v-ymin)/(ymax-ymin));
+const dayI=d=>Math.max(0,S.findIndex(s=>s[0]>=d));
+let g='';[60,80,100,120].forEach(v=>g+=`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#1c1a17" stroke-opacity="${v==100?.5:.13}" stroke-width="2" ${v==100?'stroke-dasharray="10 9"':''}/><text class="ax" x="${L-14}" y="${Y(v)+9}" text-anchor="end">${v}</text>`);
+[['2026-04-01','APR'],['2026-06-01','JUN'],['2026-08-01','AUG'],['2026-10-01','OCT']].forEach(([d,l])=>g+=`<text class="ax" x="${X(dayI(d))}" y="${H-18}" text-anchor="middle">${l}</text>`);
+g+=`<defs><clipPath id="cl"><rect id="clr" x="0" y="0" width="0" height="${H}"/></clipPath></defs><g clip-path="url(#cl)" filter="url(#ruff)"><polyline fill="none" stroke="#1c1a17" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" points="${S.map((s,i)=>X(i).toFixed(1)+','+Y(s[1]).toFixed(1)).join(' ')}"/></g>`;
+const iPk=dayI(F.peak_day),iO=dayI(F.worst_day),last=S[N-1][1];
+let sd=11;const rnd=()=>{sd=(sd*16807)%2147483647;return sd/2147483647};
+function rel(cx,cy,rx,ry){let p=[];for(let i=0;i<=40;i++){const a=-.5+i/34*Math.PI*2.13,j=1+(rnd()-.5)*.07;p.push((cx+Math.cos(a)*rx*j).toFixed(1)+' '+(cy+Math.sin(a)*ry*j).toFixed(1))}return 'M'+p.join(' L')}
+g+=`<g id="m1"><path class="dr" d="${rel(X(iPk),Y(S[iPk][1]),46,34)}" fill="none" stroke="#c4301c" stroke-width="6" filter="url(#rough)"/><text class="hand tx" x="${X(iPk)+60}" y="${Y(S[iPk][1])-24}">peak, ${F.index_peak.toFixed(0)}</text></g>`;
+g+=`<g id="m2"><path class="dr" d="${rel(X(N-1)-6,Y(last),40,32)}" fill="none" stroke="#c4301c" stroke-width="6" filter="url(#rough)"/><text class="hand tx" x="${X(N-1)-20}" y="${Y(last)+90}" text-anchor="end">now ${F.index_now.toFixed(0)}</text></g>`;
+$('#csvg').innerHTML=g;
+const lens=new Map();$$('.dr,#x100').forEach(p=>{const l=p.getTotalLength();lens.set(p,l);p.style.strokeDasharray=l;p.style.strokeDashoffset=l});
+const dp=(p,a)=>p.style.strokeDashoffset=lens.get(p)*(1-ease(a));
+const fade=(e,a)=>{e.style.opacity=ease(a);e.style.transform=`translateY(${(1-ease(a))*20}px)`};
+
+window.draw=function(t){
+ $('#gt').setAttribute('seed',1+Math.floor(t*24)%12);
+ const sc=TL.scenes[0],tt=t-sc.start,b=sc.beats,p=t/TL.total;
+ $$('.scene').forEach(e=>e.classList.toggle('on',e.id==sc.type));
+ $('#brand').style.color=sc.type=='s_chart'?'#1c1a17':'';const sec=$('#'+sc.type);sec.querySelector('.plate').style.transform=`scale(${1.03+.08*p})`;
+ const c=chunks.find(c=>t>=c[0]-.05&&t<c[1]+.15);$('#cap').innerHTML=c?`<span>${c[2].replace(HL,'<b>$1</b>')}</span>`:'';
+ if(sc.type=='s_hundred'){
+  $$('#s_hundred .a0').forEach(e=>fade(e,tt/.4));dp($('#x100'),(tt-b[2].start+.3)/.4);
+  const a=ease((tt-b[1].start-1.2)/(b[2].start-b[1].start-.6));$('#h_b').textContent=tt>b[1].start+1?eur(100+(F.equal_100-100)*a):'';
+  fade($('.a3'),(tt-b[3].start)/.4);
+ }
+ if(sc.type=='s_chart'){
+  const ks=[[0,0],[b[0].start+b[0].dur,0],[b[1].start+b[1].dur,iPk],[b[2].start+b[2].dur,iO+1],[b[3].start+1,N-1]];
+  let idx=0;for(let i=1;i<ks.length;i++){if(tt<=ks[i][0]||i==ks.length-1){const[a0,ia]=ks[i-1],[c0,ic]=ks[i];idx=ia+(ic-ia)*clamp((tt-a0)/Math.max(.01,c0-a0));break}}
+  idx=Math.max(idx,clamp(tt/(b[0].dur))*8);$('#clr').setAttribute('width',X(idx)+10);
+  [['m1',b[1].start+.8],['m2',b[3].start+.6]].forEach(([id,s])=>{const e=$('#'+id);dp(e.querySelector('.dr'),(tt-s)/.6);e.querySelector('.tx').style.opacity=ease((tt-s-.3)/.3)});
+  const cb=$('#cbig');if(tt>=b[4].start){cb.innerHTML='Daily sales <span style="color:#c4301c">−'+Math.abs(F.vol_chg_mar_oct).toFixed(0)+'%</span>';fade(cb,(tt-b[4].start)/.4)}
+  else if(tt>=b[3].start){cb.innerHTML='<span style="color:#c4301c">−'+Math.abs(F.chg_from_peak).toFixed(0)+'%</span> from peak';fade(cb,(tt-b[3].start)/.4)}else cb.style.opacity=0;
+ }
+ if(sc.type=='s_guess'){
+  const rs=b[2].start;const n=$('#g_now');
+  if(tt<rs-.05){n.textContent='?';n.style.color='var(--cream)';const cd=clamp((tt-b[1].start-b[1].dur)/(rs-b[1].start-b[1].dur));$('#g_bar').style.width=(tt>b[1].start+b[1].dur?(1-cd)*100:0)+'%'}
+  else{n.textContent=eur(snake[2]);n.style.color='var(--sig)';$('#g_bar').style.width='0';n.style.transform=`scale(${1+.12*(1-ease((tt-rs)/.35))})`;n.style.transformOrigin='left center'}
+ }
+};
+document.fonts.ready.then(()=>{window.draw(0);window.__ready=true});
+</script></body></html>

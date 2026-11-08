@@ -1,0 +1,40 @@
+{"title":"I Tracked 26 CS2 Cases for 8 Months. None Went Up.",
+ "voice":"bm_george","speed":1.0,"scene":"scene_doc.html","size":[1920,1080],
+ "scenes":[
+ {"type":"cold","beats":[
+  "I tracked twenty-six CS2 cases, every single day, for almost eight months.",
+  "Not one of them went up.",
+  "And these are the cases Valve stopped dropping.",
+  "Around the turn of the year, the rare drop pool went quiet, and more than thirty old cases lost their main source of new supply.",
+  "Supply freezes, scarcity kicks in, prices climb. That's the theory.",
+  "It didn't happen. And at the end, I'll show you the one number that would change my mind."]},
+ {"type":"stat","beats":[
+  "Here's how I measured it. One Steam Market price per case, per day, from mid-March until this week.",
+  "Cases that are up? Zero.",
+  "The typical case is down twenty-eight percent."]},
+ {"type":"chart","beats":[
+  "Here's an index of all twenty-six. One hundred is mid-March.",
+  "At first, the scarcity story looked right. By early May, the index had reached one hundred and ten.",
+  "Then it rolled over. Late June brought the first sharp leg down.",
+  "The summer was a slow bleed, until early October delivered the worst seven days in this data, down ten percent.",
+  "Today it's sitting around seventy-two, thirty-five percent below the May high."]},
+ {"type":"bars","beats":[
+  "The damage isn't even.",
+  "Snakebite and Clutch have both more than halved. Snakebite went from seventy-six euro cents to thirty-five.",
+  "The best performer was the Revolver Case, and it still lost eleven percent.",
+  "Spectrum and the Chroma cases held up better too, but nothing here is a winner. They just lost less."]},
+ {"type":"hundred","beats":[
+  "Split a hundred euros evenly across these cases in March, and today you'd be holding about seventy-one, before Steam takes its cut."]},
+ {"type":"why","beats":[
+  "So why did frozen supply fail? Because supply is only half the equation.",
+  "Look at sales. In March, the average case sold about five thousand two hundred units a day. In October, about two thousand nine hundred. That's forty-five percent fewer.",
+  "Players are leaving too. October averaged about seven hundred and ninety-seven thousand concurrent players, sixteen percent below a year earlier.",
+  "And cases have more competition. Since October twenty twenty-five, five Covert skins can be traded up for a knife or gloves, and Valve's newest releases are Terminals, not classic cases.",
+  "Even the cases still dropping fell. Kilowatt has halved since July."]},
+ {"type":"end","beats":[
+  "Here's my read. Scarcity can set up a price move, but it can't create demand.",
+  "A frozen supply doesn't matter much when the buyers are leaving.",
+  "So the number that would change my mind is daily sales. If that stops falling, the story changes.",
+  "Starting next episode, I'm putting a real hundred euros into cases, and I'll show you the result every week. Wins and losses.",
+  "Which of these would you hold? Tell me in the comments. This isn't financial advice, and the sources are in the description."]}
+]}

@@ -1,0 +1,7 @@
+{"title":"Guess the price: Snakebite Case","voice":"bm_george","speed":1.05,"scene":"short.html","size":[1080,1920],"lead":0.15,"scene_gap":0.2,"beat_gap":0.18,
+ "scenes":[{"type":"s_guess","beats":[
+  "Snakebite Case. In March, it sold for seventy-six euro cents on the Steam Market.",
+  {"text":"Guess what it's worth today.","pause":2.2},
+  "Thirty-five cents. Down fifty-four percent.",
+  "And Valve doesn't even drop it anymore. So much for scarcity.",
+  "Which case falls next? Comment your pick."]}]}

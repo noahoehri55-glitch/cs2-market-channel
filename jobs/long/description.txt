@@ -1,0 +1,14 @@
+Valve stopped dropping CS2's old cases, so prices should have climbed. Daily Steam Market data for 26 of them shows the opposite.
+
+Method: daily Steam Community Market median prices in EUR, 15 March to 5 November 2026, collected by the public steam-case-prices project on GitHub. The index is the median of 26 cases, rebased to the first week (100), with a 7-day median to remove outliers. Dreams & Nightmares and Fracture are excluded. The data starts in March 2026, so it doesn't show the period right after the drop change.
+
+Sources:
+Price data: https://github.com/Bl4ckspell7/steam-case-prices
+Drop pool change: https://cs2central.gg/blog/cs2-rare-cases-removed-from-drops/
+Cases and Terminals: https://techaeris.com/2026/04/08/valve-is-quietly-killing-cs2-cases/
+Trade-up update: https://gamertweak.com/one-year-after-valves-trade-up-update-where-the-cs2-skin-market-stands-now/
+Player numbers: https://timesaver.gg/news/cs2-player-count-august-2026-two-year-low
+
+Narration is a synthetic voice. Background photos are AI-generated, not real locations.
+
+Not financial advice. Valve has not confirmed the drop pool change.
