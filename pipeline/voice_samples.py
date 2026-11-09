@@ -10,11 +10,17 @@ H = {"xi-api-key": KEY}
 out = f"{ROOT}/samples"
 os.makedirs(out, exist_ok=True)
 
+# ElevenLabs premade voices; used when the API key may not list voices (no voices_read permission)
+PREMADE = {"George": "JBFqnCBsd6RMkjVDRZzb", "Brian": "nPczCjzI2devNBz1zQrb", "Daniel": "onwK4e9ZLuTAKqWW03F9",
+           "Adam": "pNInz6obpgDQGcFmaJgB", "Bill": "pqHfZKP75CvOlQylNhV4", "Eric": "cjVigY5qzO86Huf0OWal",
+           "Chris": "iP95p4xoKVk53GoZ742B", "Roger": "CwhRBWXzGAHq8TQ4Fs17", "Liam": "TX3LPaxmHKxFdv7VOQHJ",
+           "Will": "bIHbv24MWmeRgasZH58o", "Callum": "N2lVS1w4EtoT3dr4eOWO", "Charlie": "IKne3meq5aSn9XLyUdCD"}
 r = requests.get(f"{API}/voices", headers=H, timeout=30)
-if r.status_code != 200:
-    print("cannot list voices:", r.status_code, r.text[:300])
-    sys.exit(1)
-voices = r.json()["voices"]
+if r.status_code == 200:
+    voices = r.json()["voices"]
+else:
+    print("cannot list voices, using premade IDs:", r.status_code, r.text[:200])
+    voices = [{"name": n, "voice_id": i, "category": "premade"} for n, i in PREMADE.items()]
 with open(f"{out}/voices.txt", "w") as f:
     for v in voices:
         lab = v.get("labels") or {}

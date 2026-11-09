@@ -29,7 +29,10 @@ else:
     KEY = os.environ["ELEVENLABS_API_KEY"]
     MODEL = s.get("el_model", "eleven_multilingual_v2")
     API = "https://api.elevenlabs.io/v1"
-    FALLBACK = {"George": "JBFqnCBsd6RMkjVDRZzb"}  # ElevenLabs premade voice
+    FALLBACK = {"George": "JBFqnCBsd6RMkjVDRZzb", "Brian": "nPczCjzI2devNBz1zQrb", "Daniel": "onwK4e9ZLuTAKqWW03F9",
+                "Adam": "pNInz6obpgDQGcFmaJgB", "Bill": "pqHfZKP75CvOlQylNhV4", "Eric": "cjVigY5qzO86Huf0OWal",
+                "Chris": "iP95p4xoKVk53GoZ742B", "Roger": "CwhRBWXzGAHq8TQ4Fs17", "Liam": "TX3LPaxmHKxFdv7VOQHJ",
+                "Will": "bIHbv24MWmeRgasZH58o", "Callum": "N2lVS1w4EtoT3dr4eOWO", "Charlie": "IKne3meq5aSn9XLyUdCD"}  # premade voices
 
     def voice_id():
         if os.environ.get("ELEVENLABS_VOICE_ID"):
