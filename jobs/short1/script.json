@@ -1,7 +1,29 @@
-{"title":"€100 in old CS2 cases. Here's what's left.","voice":"bm_george","speed":1.05,"scene":"short.html","size":[1080,1920],"lead":0.15,"scene_gap":0.2,"beat_gap":0.18,
- "scenes":[{"type":"s_hundred","beats":[
-  "Valve stopped dropping these CS2 cases. So they should have gone up, right?",
-  "Split a hundred euros across twenty-six of them in March, and here's what you'd have today.",
-  {"text":"Seventy euros, sixty-six cents.","pause":0.3},
-  "That's before Steam takes its fee. Not one of the twenty-six went up.",
-  "Full breakdown on the channel."]}]}
+{
+ "title": "€100 in old CS2 cases. Here's what's left.",
+ "voice": "bm_george",
+ "speed": 1.05,
+ "scene": "short.html",
+ "size": [
+  1080,
+  1920
+ ],
+ "lead": 0.15,
+ "scene_gap": 0.2,
+ "beat_gap": 0.18,
+ "scenes": [
+  {
+   "type": "s_hundred",
+   "beats": [
+    "Valve stopped dropping these CS2 cases. So they should have gone up, right?",
+    "Split a hundred euros across twenty-six of them in March, and here's what you'd have today.",
+    {
+     "text": "Seventy euros, sixty-six cents.",
+     "pause": 0.3
+    },
+    "That's before Steam takes its fee. Not one of the twenty-six went up.",
+    "Full breakdown on the channel."
+   ]
+  }
+ ],
+ "el_voice": "Liam"
+}
