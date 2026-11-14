@@ -1,0 +1,111 @@
+1
+00:00:00,350 --> 00:00:04,427
+I tracked twenty-six CS2 cases, every single day, for almost eight months.
+
+2
+00:00:04,707 --> 00:00:05,749
+Not one of them went up.
+
+3
+00:00:06,029 --> 00:00:08,260
+And these are the cases Valve stopped dropping.
+
+4
+00:00:08,540 --> 00:00:16,338
+Around the turn of the year, the rare drop pool went quiet, and more than thirty old cases lost their main source of new supply.
+
+5
+00:00:16,618 --> 00:00:21,382
+Supply freezes, scarcity kicks in, prices climb. That's the theory.
+
+6
+00:00:21,662 --> 00:00:26,238
+It didn't happen. And at the end, I'll show you the one number that would change my mind.
+
+7
+00:00:27,068 --> 00:00:33,241
+Here's how I measured it. One Steam Market price per case, per day, from mid-March until this week.
+
+8
+00:00:33,521 --> 00:00:35,650
+Cases that are up? Zero.
+
+9
+00:00:35,930 --> 00:00:38,165
+The typical case is down twenty-eight percent.
+
+10
+00:00:38,995 --> 00:00:42,406
+Here's an index of all twenty-six. One hundred is mid-March.
+
+11
+00:00:42,686 --> 00:00:48,394
+At first, the scarcity story looked right. By early May, the index had reached one hundred and ten.
+
+12
+00:00:48,674 --> 00:00:52,744
+Then it rolled over. Late June brought the first sharp leg down.
+
+13
+00:00:53,024 --> 00:00:59,129
+The summer was a slow bleed, until early October delivered the worst seven days in this data, down ten percent.
+
+14
+00:00:59,409 --> 00:01:03,057
+Today it's sitting around seventy-two, thirty-five percent below the May high.
+
+15
+00:01:03,887 --> 00:01:05,176
+The damage isn't even.
+
+16
+00:01:05,456 --> 00:01:11,980
+Snakebite and Clutch have both more than halved. Snakebite went from seventy-six euro cents to thirty-five.
+
+17
+00:01:12,260 --> 00:01:16,915
+The best performer was the Revolver Case, and it still lost eleven percent.
+
+18
+00:01:17,195 --> 00:01:23,775
+Spectrum and the Chroma cases held up better too, but nothing here is a winner. They just lost less.
+
+19
+00:01:24,605 --> 00:01:33,010
+Split a hundred euros evenly across these cases in March, and today you'd be holding about seventy-one, before Steam takes its cut.
+
+20
+00:01:33,840 --> 00:01:38,196
+So why did frozen supply fail? Because supply is only half the equation.
+
+21
+00:01:38,476 --> 00:01:49,744
+Look at sales. In March, the average case sold about five thousand two hundred units a day. In October, about two thousand nine hundred. That's forty-five percent fewer.
+
+22
+00:01:50,024 --> 00:01:57,792
+Players are leaving too. October averaged about seven hundred and ninety-seven thousand concurrent players, sixteen percent below a year earlier.
+
+23
+00:01:58,072 --> 00:02:09,927
+And cases have more competition. Since October twenty twenty-five, five Covert skins can be traded up for a knife or gloves, and Valve's newest releases are Terminals, not classic cases.
+
+24
+00:02:10,207 --> 00:02:14,547
+Even the cases still dropping fell. Kilowatt has halved since July.
+
+25
+00:02:15,377 --> 00:02:20,105
+Here's my read. Scarcity can set up a price move, but it can't create demand.
+
+26
+00:02:20,385 --> 00:02:23,529
+A frozen supply doesn't matter much when the buyers are leaving.
+
+27
+00:02:23,809 --> 00:02:29,281
+So the number that would change my mind is daily sales. If that stops falling, the story changes.
+
+28
+00:02:29,561 --> 00:02:36,815
+Which of these would you hold? Tell me in the comments. This isn't financial advice, and the sources are in the description.
